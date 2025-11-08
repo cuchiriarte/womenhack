@@ -9,7 +9,7 @@
         <div style="flex:1">
           <h3>Login</h3>
           <form id="login-form">
-            <label>Usuario <input class="input" name="user" required></label>
+            <label>usuaria <input class="input" name="user" required></label>
             <label>Contraseña <input class="input" name="pass" type="password" required></label>
             <div class="mt-1"><button class="btn" type="submit">Entrar</button></div>
           </form>
@@ -17,7 +17,7 @@
         <div style="flex:1">
           <h3>Registro (Aprendiz)</h3>
           <form id="reg-form">
-            <label>Usuario <input class="input" name="user" required></label>
+            <label>usuaria <input class="input" name="user" required></label>
             <label>Contraseña <input class="input" name="pass" type="password" required></label>
             <label>Habilidades (comas) <input class="input" name="skills"></label>
             <div class="mt-1"><button class="btn alt" type="submit">Registrar</button></div>
@@ -53,7 +53,7 @@
     const creds = RM.getCreds();
     creds.aprendiz = creds.aprendiz || [];
     if(creds.aprendiz.find(u=>u.user===user) || creds.escuela.find(u=>u.user===user)){
-      alert('Usuario ya existe (demo).');
+      alert('usuaria ya existe (demo).');
       return;
     }
     creds.aprendiz.unshift({user, pass, role:'aprendiz', skills});
@@ -69,7 +69,7 @@
     // simple courses demo
     const courses = [
       {id:'c1', title:'Introducción a JS', level:'Principiante', desc:'Bases de programación con JavaScript.'},
-      {id:'c2', title:'Diseño UX/UI', level:'Intermedio', desc:'Principios de diseño centrado en el usuario.'},
+      {id:'c2', title:'Diseño UX/UI', level:'Intermedio', desc:'Principios de diseño centrado en el usuaria.'},
       {id:'c3', title:'Data y visualización', level:'Principiante', desc:'Visualizar datos con herramientas básicas.'}
     ];
     appArea.innerHTML = `
@@ -109,7 +109,7 @@
     const all = [].concat(creds.escuela||[], creds.aprendiz||[]);
     const me = all.find(u=>u.user===user) || {};
     const el = document.getElementById('profile-area');
-    el.innerHTML = `<p><strong>Usuario:</strong> ${RM.escapeHTML(me.user||'')}</p>
+    el.innerHTML = `<p><strong>usuaria:</strong> ${RM.escapeHTML(me.user||'')}</p>
       <p><strong>Habilidades:</strong> ${(me.skills||[]).map(RM.escapeHTML).join(', ') || '—'}</p>
       <div class="mt-1"><button id="edit-profile" class="btn">Editar perfil</button></div>`;
     document.getElementById('edit-profile').addEventListener('click', ()=>{
