@@ -1,0 +1,30 @@
+Objetivo:
+
+1) Ayudar a cerrar la brecha para que Madres puedan reincorporarse al mundo laboral. 
+
+Necesitamos desarrollar una aplicaición web orientada en la reiserción 
+de madres, la idea de negocio consiste en que va ser una web que en principio
+va a orientar a madres y mostrar como una ESCUELA con rutas de aprendizaje enfocado a 
+cursos STEAM con diferentes técnologías para que se capaciten y luego otra aplicación
+dentro de la web que será una MARKETPLACE en donde ya luego de haber adquirido
+las habilidades en los cursos estas madres pueden ofertarce como freelances
+a empresas, incluso si ya tiene una habilidad STEAM puede ofertarce sin hacer los cursos,
+esto puede ser preguntado cuando la madre se registre en la aplicación, 
+donde la madre dirá cuales son las habilidades que tiene y cuales son las que puede y quiere adquirir.
+
+Quiero que desarrolles un demo de esta aplicación web con las siguientes características:
+
+1) Página de inicio atractiva que explique la misión de la plataforma y los beneficios para las madres.
+2) Sección de registro e inicio de sesión para madres.
+3) Página de cursos STEAM con descripciones, niveles y opciones de inscripción.
+4) Sección de perfil de usuario donde las madres puedan ver y actualizar sus habilidades.
+5) Marketplace donde las madres puedan crear perfiles de freelance y ofertar sus servicios.
+6) Diseño responsivo para que la aplicación sea accesible desde dispositivos móviles y de escritorio.
+7) Implementación básica de seguridad para proteger la información de las usuarias.
+8) puedes crear el poyecto en react 
+9) ten en cuenta que la aplicación está orientada a madres andaluzas en españa
+10) necesito que en la landing page coloques los objetivos y quienes somos
+11) este es un ejemplo de aplicación web para la landing page: https://cloudtask.info/
+12) este es un ejemplo de aplicación web de marketplace: https://es.fiverr.com/
+13) este es un ejemplo de aplicación web de escuela digital: https://platzi.com/
+

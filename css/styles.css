@@ -1,0 +1,41 @@
+/* Reset y estilos básicos */
+:root{
+  --primary:#00695c;
+  --accent:#ffb74d;
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --maxw:1100px;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#222}
+.container{max-width:var(--maxw);margin:0 auto;padding:1rem}
+.site-header{background:var(--primary);color:#fff;padding:.6rem 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.2rem}
+nav a{color:#fff;text-decoration:none;margin-left:1rem;font-weight:600}
+.site-footer{padding:1rem 0;text-align:center;color:#555}
+
+/* Layout cards */
+.card{background:var(--card);border-radius:8px;padding:1rem;margin:1rem 0;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid{grid-template-columns:1fr};nav a{display:none}}
+
+/* Buttons & forms */
+.btn{display:inline-block;padding:.5rem .8rem;background:var(--primary);color:#fff;border-radius:6px;border:none;cursor:pointer}
+.btn.alt{background:var(--accent);color:#222}
+.input,textarea,select{width:100%;padding:.5rem;border:1px solid #ddd;border-radius:6px;margin:.4rem 0}
+.small{font-size:.9rem;color:#666}
+
+/* Specifics */
+.hero{display:flex;gap:1rem;align-items:center}
+.hero .left{flex:1}
+.hero .right{flex:1}
+.course-card, .offer-card{padding:.8rem;border:1px solid #eee;border-radius:8px}
+.list-inline{display:flex;gap:.5rem;flex-wrap:wrap}
+.badge{background:#eee;padding:.2rem .4rem;border-radius:6px;font-size:.85rem}
+
+/* Simple utilities */
+.mt-1{margin-top:1rem}
+.center{text-align:center}
