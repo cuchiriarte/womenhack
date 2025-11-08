@@ -28,3 +28,32 @@ Quiero que desarrolles un demo de esta aplicación web con las siguientes caract
 12) este es un ejemplo de aplicación web de marketplace: https://es.fiverr.com/
 13) este es un ejemplo de aplicación web de escuela digital: https://platzi.com/
 
+nuevos requerimientos:
+
+1) necesito que el market place y la escuela estén separados de la lading, serán como dos aplicaciones distintas, en cada una de ellas
+habrá un login y registro. 
+2) en la landing en el nav quiero que esté la tab de marketplace, de 
+la escuela y la sección de quienes somos, esto quiero que sea una página distina. 
+3) para el market place habrá dos perfiles, el usuario compañía
+y la usuario freelancer
+4) Para la escuela habrá 2 perfiles, la escuela y la aprendiz
+5) necesito que para los login me generes usuarios demo y me hagas un 
+archivo con las credenciales de cada uno de los perfiles
+6) necesito que la paleta de colores de las paginas web sean moradas y azules
+7) necesito interactuar con las funcionalidades de la market place y 
+la escuela con rutas de aprendizaje con cursos, como si fuera platzi
+
+respuestas a resolver a chat gpt:
+
+1) necesito no descargar framworks aun, como si fuera un figma 
+2) formato json
+3) quiero ejemplos y 2 usuarios por perfil, necesito que sean estos uruarios por defecto se mantengan que aunque se cargue nuevamente la pagina se mantengan allí.
+4) serán: #cb6ce6 y #004aad
+5) si que sea por localstorage
+
+Confirmas que quieres páginas HTML separadas (no SPA) — así se abren con doble clic en el navegador.
+respuesta: SI, quiero paginas html separadas
+Confirmas que cree las 8 credenciales (2 por perfil) y las pre-seed en localStorage automáticamente
+respuesta: SI 
+
+

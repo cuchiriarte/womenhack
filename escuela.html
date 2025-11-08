@@ -3,33 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ReinsertaMamá - Demo</title>
+  <title>Escuela - ReinsertaMamá (Demo)</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="logo">ReinsertaMamá</h1>
+      <h1 class="logo">Escuela • ReinsertaMamá</h1>
       <nav>
         <a href="index.html" class="nav-link">Inicio</a>
         <a href="market.html" class="nav-link">Marketplace</a>
         <a href="escuela.html" class="nav-link">Escuela</a>
-        <a href="quienes.html" class="nav-link">Quiénes somos</a>
       </nav>
     </div>
   </header>
 
-  <main id="app" class="container">
-    <!-- Contenido renderizado por js/landing.js -->
+  <main class="container">
+    <section class="card" id="auth-area">
+      <!-- login/registro renderizados por js/escuela.js -->
+    </section>
+
+    <section class="card" id="school-app" style="display:none;">
+      <!-- app escuela: cursos, perfil, inscripciones -->
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>ReinsertaMamá — Demo orientado a madres andaluzas • Demo local</small>
-    </div>
+    <div class="container"><small>Demo local</small></div>
   </footer>
 
   <script src="js/common.js"></script>
-  <script src="js/landing.js"></script>
+  <script src="js/escuela.js"></script>
 </body>
 </html>
