@@ -8,7 +8,7 @@
         <div style="flex:1">
           <h3>Login</h3>
           <form id="login-m">
-            <label>Usuario <input class="input" name="user" required></label>
+            <label>usuaria <input class="input" name="user" required></label>
             <label>Contraseña <input class="input" name="pass" type="password" required></label>
             <div class="mt-1"><button class="btn" type="submit">Entrar</button></div>
           </form>
@@ -16,7 +16,7 @@
         <div style="flex:1">
           <h3>Registro (Freelancer)</h3>
           <form id="reg-m">
-            <label>Usuario <input class="input" name="user" required></label>
+            <label>usuaria <input class="input" name="user" required></label>
             <label>Contraseña <input class="input" name="pass" type="password" required></label>
             <label>Habilidades (comas) <input class="input" name="skills"></label>
             <div class="mt-1"><button class="btn alt" type="submit">Registrar</button></div>
@@ -47,7 +47,7 @@
     const creds = RM.getCreds();
     creds.freelancer = creds.freelancer || [];
     if(creds.freelancer.find(u=>u.user===user) || creds.empresa.find(u=>u.user===user)){
-      alert('Usuario ya existe (demo).'); return;
+      alert('usuaria ya existe (demo).'); return;
     }
     creds.freelancer.unshift({user, pass, role:'freelancer', skills});
     RM.saveCreds(creds);
