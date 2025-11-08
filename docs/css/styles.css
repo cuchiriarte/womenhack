@@ -40,3 +40,48 @@ nav a{color:#fff;text-decoration:none;margin-left:1rem;font-weight:600}
 .mt-1{margin-top:1rem}
 .center{text-align:center}
 label{display:block;margin-top:.6rem}
+.bg-image{
+  position:fixed;
+  inset:0;
+  background-image:url('../images/imagen-principal.jpeg'); /* ruta relativa al archivo CSS */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  filter: brightness(0.65) saturate(0.95);
+  z-index:-1; /* queda detrás del contenido */
+}
+
+/* mejora legibilidad cuando el fondo es imagen */
+.site-header, .card {
+  background-color: rgba(255,255,255,0.92);
+  backdrop-filter: blur(2px);
+}
+
+/* Banner/imagen principal en el flujo (debajo del header) */
+.hero-image{
+  width:100%;
+  height:320px;                 /* ajusta altura según prefieras */
+  background-image: url('../images/imagen-principal.jpeg'); /* desde css/ hacia images/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Asegurar footer opaco y por encima de la imagen */
+.site-footer{
+  padding:1rem 0;
+  text-align:center;
+  color:#555;
+  background: #ffffff; /* fondo sólido para que no se vea la imagen debajo */
+  position: relative;
+  z-index: 1;
+}
+
+/* opcional: dar fondo semitransparente a tarjetas si necesitas legibilidad */
+.card {
+  background-color: rgba(255,255,255,0.95);
+}
